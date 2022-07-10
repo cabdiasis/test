@@ -35,7 +35,7 @@ if (isset($_POST['update'])) {
 	$name = $_POST['name'];
 	$pics = $_POST['pics'];
 	$paid = $_POST['paid'];
-    $unpaid = $_POST['unpaid'];
+  $unpaid = $_POST['unpaid'];
 	$pmethod = $_POST['pmethod'];
 	$phone = $_POST['phone'];
 
@@ -122,14 +122,14 @@ if (isset($_POST['update'])) {
       <div class="form-style-5">
         <form method="post">
           <label>Name:</label>
-          <input type="text" name="name" value="" placeholder="Geli Magaca" required>
+          <input type="text" name="name" value="<?php echo $name; ?>" placeholder="Geli Magaca" required>
           <label>Number of pictures:</label>
-          <input type="text" name="userid" hidden="hidden" value="<?php echo $userid ?>">
-          <input type="text" name="npics" placeholder="Geli Tirada Sawirka" required>
+          <input type="text" name="userid" hidden="hidden" value="<?php echo $userid; ?>">
+          <input type="text" name="npics" value="<?php echo $pics; ?>"placeholder="Geli Tirada Sawirka" required>
           <label>Money Paid:</label>
-          <input type="text" name="paid" value="" placeholder="Geli Lacagta La Bixiyay" required>
+          <input type="text" name="paid" value="<?php echo $paid; ?>" placeholder="Geli Lacagta La Bixiyay" required>
           <label>Money Left to Pay:</label>
-          <input type="text" name="unpaid" value="" placeholder="Geli Lacagta Baaqiga ah" required>
+          <input type="text" name="unpaid" value="<?php echo $unpaid; ?>" placeholder="Geli Lacagta Baaqiga ah" required>
           <label>Payment Method</label>
           <select name="pmethod">
               <option value="Zaad">Zaad</option>
@@ -137,7 +137,7 @@ if (isset($_POST['update'])) {
               <option value="Cash">Cash</option>
           </select>
           <label>Phone Number:</label>
-          <input value="" type="text" name="phone" placeholder="Geli Numberka Macmiilka" required>
+          <input value="" type="text" name="phone" value="<?php echo $phone; ?>"placeholder="Geli Numberka Macmiilka" required>
           <input type="submit" name="Update" value="Update">
         </form>
       </div>
