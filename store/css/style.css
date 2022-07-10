@@ -610,9 +610,9 @@ table {
 th, td {
   text-align: center;
   padding: 8px;
-  border-right:1px solid blue;
-  border-left:1px solid blue;
-  border-bottom:1px solid blue;
+  border-right:1px solid black;
+  border-left:1px solid black;
+  border-bottom:1px solid black;
 }
 td button{
   width:60%;
@@ -620,7 +620,7 @@ td button{
 }
 .unpaid{
   background:rgb(241, 168, 168);
-  color:white;
+  color:darkblue;
 }
 .unpaid .btn{
   background-color: red;
@@ -629,7 +629,7 @@ td button{
 }
 .partial{
   background:rgb(241, 216, 170);
-  color:white;
+  color:darkblue;
 }
 .partial .btn{
   background-color: orange;
