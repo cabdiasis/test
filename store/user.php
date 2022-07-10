@@ -162,7 +162,6 @@ $year = date("Y");
           <th>Baaqi ah</th>
           <th>Lacag Bixin</th>
           <th>Money</th>
-          <th>Action</th>
         </tr>
         <?php
        $conn = mysqli_connect("us-cdbr-east-06.cleardb.net","b15ea59dcdac73","def2bd98","heroku_ee628d3fc1a82c3");
@@ -192,9 +191,7 @@ $year = date("Y");
           <td><?php echo $row['pmethod'];  ?></td>
           <td>
             <button class="btn">Good</button></td>
-            <td>
-              <a href="update.php?edit=<?php echo $row['ID']; ?>" class="edit" >Edit</a>
-            </td>
+            
         </tr>
         <?php
           }else if($row['paid'] == 0){
@@ -207,9 +204,7 @@ $year = date("Y");
           <td><?php echo $row['unpaid'];  ?></td>
           <td><?php echo $row['pmethod'];  ?></td>
           <td><button class="btn">Bixi</button></td>
-          <td>
-            <a href="update.php?edit=<?php echo $row['ID']; ?>" class="edit" >Edit</a>
-          </td>
+          
         </tr>
         <?php
           }else{
@@ -222,9 +217,7 @@ $year = date("Y");
           <td><?php echo $row['unpaid'];  ?></td>
           <td><?php echo $row['pmethod'];  ?></td>
           <td><button class="btn">Bixi</button></td>
-          <td>
-            <a href="update.php?edit=<?php echo $row['ID']; ?>" class="edit" >Edit</a>
-          </td>
+          
         </tr>
         <?php
           }
