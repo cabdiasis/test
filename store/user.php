@@ -193,7 +193,7 @@ $year = date("Y");
           <td>
             <button class="btn">Good</button></td>
             <td>
-              <a href="update.html?edit=<?php echo $row['id']; ?>" class="edit" >Edit</a>
+              <a href="update.php?edit=<?php echo $row['id']; ?>" class="edit" >Edit</a>
             </td>
         </tr>
         <?php
@@ -208,7 +208,7 @@ $year = date("Y");
           <td><?php echo $row['pmethod'];  ?></td>
           <td><button class="btn">Bixi</button></td>
           <td>
-            <a href="update.html?edit=<?php echo $row['id']; ?>" class="edit" >Edit</a>
+            <a href="update.php?edit=<?php echo $row['id']; ?>" class="edit" >Edit</a>
           </td>
         </tr>
         <?php
@@ -223,7 +223,7 @@ $year = date("Y");
           <td><?php echo $row['pmethod'];  ?></td>
           <td><button class="btn">Bixi</button></td>
           <td>
-            <a href="update.html?edit=<?php echo $row['id']; ?>" class="edit" >Edit</a>
+            <a href="update.php?edit=<?php echo $row['id']; ?>" class="edit" >Edit</a>
           </td>
         </tr>
         <?php
@@ -296,4 +296,5 @@ $year = date("Y");
   <!-- end google map js -->
 </body>
 
+</html>
 </html>
